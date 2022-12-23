@@ -11,6 +11,9 @@
 		D78EF5FA2955C05D007445D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78EF5F92955C05D007445D7 /* ContentView.swift */; };
 		D78EF5FC2955C05D007445D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78EF5FB2955C05D007445D7 /* Assets.xcassets */; };
 		D78EF5FF2955C05D007445D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D78EF5FE2955C05D007445D7 /* Preview Assets.xcassets */; };
+		D78EF6092955C341007445D7 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D78EF6082955C341007445D7 /* Pacifico-Regular.ttf */; };
+		D78EF60B2955E99E007445D7 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78EF60A2955E99E007445D7 /* InfoView.swift */; };
+		D78EF60D2955ED26007445D7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D78EF60C2955ED26007445D7 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,10 @@
 		D78EF5F92955C05D007445D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D78EF5FB2955C05D007445D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D78EF5FE2955C05D007445D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D78EF6072955C17C007445D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D78EF6082955C341007445D7 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		D78EF60A2955E99E007445D7 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		D78EF60C2955ED26007445D7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +58,14 @@
 		D78EF5F62955C05D007445D7 /* DorsafCard */ = {
 			isa = PBXGroup;
 			children = (
+				D78EF6072955C17C007445D7 /* Info.plist */,
+				D78EF60A2955E99E007445D7 /* InfoView.swift */,
+				D78EF6052955C0F3007445D7 /* fonts */,
 				D78EF5F72955C05D007445D7 /* DorsafCardApp.swift */,
 				D78EF5F92955C05D007445D7 /* ContentView.swift */,
 				D78EF5FB2955C05D007445D7 /* Assets.xcassets */,
 				D78EF5FD2955C05D007445D7 /* Preview Content */,
+				D78EF60C2955ED26007445D7 /* Launch Screen.storyboard */,
 			);
 			path = DorsafCard;
 			sourceTree = "<group>";
@@ -65,6 +76,14 @@
 				D78EF5FE2955C05D007445D7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D78EF6052955C0F3007445D7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D78EF6082955C341007445D7 /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +144,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D78EF6092955C341007445D7 /* Pacifico-Regular.ttf in Resources */,
 				D78EF5FF2955C05D007445D7 /* Preview Assets.xcassets in Resources */,
+				D78EF60D2955ED26007445D7 /* Launch Screen.storyboard in Resources */,
 				D78EF5FC2955C05D007445D7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D78EF5FA2955C05D007445D7 /* ContentView.swift in Sources */,
+				D78EF60B2955E99E007445D7 /* InfoView.swift in Sources */,
 				D78EF5F82955C05D007445D7 /* DorsafCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +292,7 @@
 				DEVELOPMENT_TEAM = 9D468FBYCU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DorsafCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +322,7 @@
 				DEVELOPMENT_TEAM = 9D468FBYCU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DorsafCard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
